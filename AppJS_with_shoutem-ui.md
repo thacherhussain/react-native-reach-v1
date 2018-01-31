@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import { StatusBar, StyleSheet, Text, Alert } from 'react-native';
 import { Button } from 'react-native-elements';
 import { Font, AppLoading } from 'expo';
-import { View, Examples, NavigationBar, Heading, Title } from '@shoutem/ui';
-
-import Section from './Section'
+import { View, Examples } from '@shoutem/ui';
 
 export default class App extends React.Component {
   state = {
@@ -40,14 +38,8 @@ export default class App extends React.Component {
 
     return (
       <View styleName="flexible">
-        {/* <Examples /> */}
-        {/* <StatusBar barStyle="default" hidden={false} /> */}
-        <NavigationBar
-          centerComponent={<Title>TITLE</Title>}>
-        </NavigationBar>
-        <View>
-          <Heading>Hello</Heading>
-        </View>
+        <Examples />
+        <StatusBar barStyle="default" hidden={false} />
       </View>
     );
   }
